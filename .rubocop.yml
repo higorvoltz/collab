@@ -1,0 +1,91 @@
+require:
+  - rubocop-rails
+  - rubocop-performance
+  - rubocop-rspec
+
+Lint/MissingSuper:
+  Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Exclude:
+    - spec/**/*
+
+RSpec/DescribeClass:
+  Exclude:
+    - spec/features/**/*
+    - spec/requests/**/*
+
+Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+Style/SymbolArray:
+  Enabled: false
+
+Style/WordArray:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 80
+  Exclude:
+    - config/initializers/**/*
+    - config/environments/**/*
+
+Metrics/BlockLength:
+  Exclude:
+    - config/routes.rb
+    - config/initializers/**/*
+    - config/environments/**/*
+    - spec/**/*
+
+Metrics/ModuleLength:
+  Exclude:
+    - spec/**/*
+
+Metrics/MethodLength:
+  Exclude:
+    - spec/features/**/*
+
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 3.1
+  Exclude:
+    - Rakefile
+    - bin/**/*
+    - db/migrate/**/*
+    - db/schema.rb
+    - db/seeds.rb
+    - db/seeds/**/*
+    - vendor/**/*
+    - node_modules/**/*
+
+Rails/UnknownEnv:
+  Environments:
+    - production
+    - staging
+    - development
+    - test
+
+Style/PreferredHashMethods:
+  EnforcedStyle: verbose
+
+RSpec/Rails/InferredSpecType:
+  Enabled: false
+
+RSpec/BeEql:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+Rails/ActionOrder:
+  ExpectedOrder:
+    - index
+    - new
+    - create
+    - show
+    - edit
+    - update
+    - destroy

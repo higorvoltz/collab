@@ -35,6 +35,12 @@ gem 'bootstrap_form'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+   # https://rubygems.org/gems/rubocop-rails
+  gem 'rubocop-rails', '~> 2.16', '>= 2.16.1'
+  # https://rubygems.org/gems/rubocop-performance
+  gem 'rubocop-performance', '~> 1.15'
+  # https://rubygems.org/gems/rubocop-rspec
+  gem 'rubocop-rspec', '~> 2.13', '>= 2.13.2'
 end
 
 group :development do
