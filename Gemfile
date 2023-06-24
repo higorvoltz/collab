@@ -41,6 +41,8 @@ group :development, :test do
   gem 'rubocop-performance', '~> 1.15'
   # https://rubygems.org/gems/rubocop-rspec
   gem 'rubocop-rspec', '~> 2.13', '>= 2.13.2'
+  # https://github.com/faker-ruby/faker
+  gem 'faker', '~> 2.23'
 end
 
 group :development do
