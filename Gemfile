@@ -41,6 +41,8 @@ group :development, :test do
   gem 'rubocop-performance', '~> 1.15'
   # https://rubygems.org/gems/rubocop-rspec
   gem 'rubocop-rspec', '~> 2.13', '>= 2.13.2'
+  # https://github.com/faker-ruby/faker
+  gem 'faker', '~> 2.23'
 end
 
 group :development do
@@ -63,7 +65,9 @@ group :test do
   # https://rubygems.org/gems/rspec-rails
   gem 'rspec-rails', '~> 6.0', '>= 6.0.3'
   # https://rubygems.org/gems/factory_girl_rails
-  gem 'factory_girl_rails', '~> 4.9'
+  # gem 'factory_girl_rails', '~> 4.9'
+  # https://github.com/thoughtbot/factory_bot_rails
+  gem 'factory_bot_rails', '~> 6.2'
   # https://rubygems.org/gems/rails-controller-testing
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
   # https://rubygems.org/gems/headless
