@@ -54,6 +54,18 @@ group :test do
   gem 'selenium-webdriver', '>= 4.0.0.rc1'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  # https://rubygems.org/gems/rspec-rails
+  gem 'rspec-rails', '~> 6.0', '>= 6.0.3'
+  # https://rubygems.org/gems/factory_girl_rails
+  gem 'factory_girl_rails', '~> 4.9'
+  # https://rubygems.org/gems/rails-controller-testing
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.5'
+  # https://rubygems.org/gems/headless
+  gem 'headless', '~> 2.3', '>= 2.3.1'
+  # https://rubygems.org/gems/poltergeist
+  gem 'poltergeist', '~> 1.18', '>= 1.18.1'
+  # https://rubygems.org/gems/database_cleaner
+  gem 'database_cleaner', '~> 2.0', '>= 2.0.2'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
