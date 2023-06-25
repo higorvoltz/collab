@@ -11,22 +11,22 @@ RSpec.describe 'Infinite scroll', type: :feature do
     expect(page).to have_selector('.single-post-list', count: 30)
   end
 
-  it "User scrolls down the hobby page
-            and posts list will be appended with older posts", js: true do
+  it 'User scrolls down the hobby page and posts list will be appended with older posts',
+     js: true do
     create_list(:post, 30, category: create(:category, branch: 'hobby'))
     visit hobby_posts_path
     check_posts_count
   end
 
-  it "User scrolls down the study page
-            and posts list will be appended with older posts", js: true do
+  it 'User scrolls down the study page and posts list will be appended with older posts',
+     js: true do
     create_list(:post, 30, category: create(:category, branch: 'study'))
     visit study_posts_path
     check_posts_count
   end
 
-  it "User scrolls down the team page
-            and posts list will be appended with older posts", js: true do
+  it 'User scrolls down the team page and posts list will be appended with older posts',
+     js: true do
     create_list(:post, 30, category: create(:category, branch: 'team'))
     visit team_posts_path
     check_posts_count
